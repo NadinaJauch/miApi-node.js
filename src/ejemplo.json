@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "michifus",
+    "edad": 3,
+    "pelaje": "naranja",
+    "comida_favorita": "atún"
+  },
+  {
+    "nombre": "newton",
+    "edad": 5,
+    "pelaje": "gris",
+    "comida_favorita": "croquetas"
+  }
+]

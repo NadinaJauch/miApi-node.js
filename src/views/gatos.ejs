@@ -1,0 +1,55 @@
+<%- include("template-default/header", {tituloWeb: 'Gatitos' }) %>
+    <div class="bg-light p-3 d-flex align-items-center justify-content-center"
+        style="height:700px; min-height:max-content">
+        <div class="card">
+            <h5 class="card-title p-3">Conoce a nuestros amigos peludos:</h5>
+            <div class="card-body">
+                <div class="container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#ID</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Edad</th>
+                                <th scope="col">Pelaje</th>
+                                <th scope="col">Comida favorita</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <% if (listadoGatos.length> 0) { %>
+                                <% listadoGatos.forEach(gato=> { %>
+
+                                    <tr>
+                                        <th scope="row">
+                                            <%= gato.id %>
+                                        </th>
+                                        <td>
+                                            <%= gato.nombre %>
+                                        </td>
+                                        <td>
+                                            <%= gato.edad %>
+                                        </td>
+                                        <td>
+                                            <%= gato.pelaje %>
+                                        </td>
+                                        <td>
+                                            <%= gato.comida_favorita %>
+                                        </td>
+
+                                    </tr>
+
+                                    <% }) %>
+                                        <% } %>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+//fetch
+    </script>
+
+    <%- include("template-default/footer") %>
